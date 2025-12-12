@@ -1,6 +1,7 @@
 import { TagVariants } from './types';
 
 export interface CardProps {
+  id: number;
   name: string;
   price?: string;
   tags?: TagVariants[];

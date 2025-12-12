@@ -12,5 +12,11 @@ enum TextColors {
 }
 
 export const Tag = ({ text, type }: TagVariants) => {
-  return <span className={`badge ${BGColors[type].toString()} ${TextColors[type].toString()}`}>{text}</span>;
+  return (
+    <span
+      className={`badge ${BGColors[type].toString()} ${TextColors[type].toString()}`}
+    >
+      {text}
+    </span>
+  );
 };
